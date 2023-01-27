@@ -4,6 +4,11 @@ from Data_process import *
 
 # Create the interactive elements for the app
 st.title("Weather Forecast for the Upcoming Days ☁️")  # title
+st.write("""
+This allows for real time weather data for a user specified city. The user can input their chosen city, the 
+required number of days they want to view the weather for (up to 5 days), and the type of weather conditions they want 
+to view. The weather data is taken from the open weather API; https://openweathermap.org/api 
+""")
 location = st.text_input("Location: ")  # location
 days = st.slider("Forecast Days: ", min_value=1, max_value=5
                  , help="Select the number of forecast days")  # slider for days
